@@ -1,0 +1,24 @@
+﻿@using animalsApp.ViewModels
+@model AnimalZooViewData
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Animals</h2>
+
+<ul>
+    @foreach(var animal in Model.Animals)
+    {
+        <li>@animal.Name</li>
+    }
+</ul>
+
+<h2>Zoos</h2>
+<ul>
+        @foreach( var zoo in Model.Zoos)
+        {
+            <li>@zoo.City</li>
+        }
+</ul>
